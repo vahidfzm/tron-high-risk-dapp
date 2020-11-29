@@ -1,5 +1,13 @@
 import 'bootstrap';
 
+export const CONTRACT_ADDRESS="TLC58UqqrLvQCJ46YzpFZnUM4Sp21VJUFx";
+
+export const DEFAULT_REFERRER_ADDRESS="TVWV3mq72wDrGs39vu5RZisXLNZyUYzqdi";
+
+
+document.getElementById('referral').value=DEFAULT_REFERRER_ADDRESS;
+
+
 document.getElementById('btnInvest1').addEventListener("click", function () {
     invest(1)
 });
@@ -15,7 +23,6 @@ document.getElementById('btnWithdraw').addEventListener("click", function () {
 });
 
 
-export const CONTRACT_ADDRESS="TLC58UqqrLvQCJ46YzpFZnUM4Sp21VJUFx";
 
 
 async function invest(plan) {
